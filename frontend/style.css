@@ -1,0 +1,200 @@
+body {
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Brand-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+.Mood-title {
+  font-size: 40px;
+  font-family: "Poppins";
+  color: rgb(14, 8, 8);
+  text-shadow: 2px;
+}
+.description-0 {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-family: Nunito, sans-serif;
+  font-style: normal;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.scroll-cue {
+  margin-top: 4rem;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  animation: glowBounce 2s infinite ease-in-out;
+  cursor: pointer;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  gap: 0.75rem;
+}
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(99, 97, 97);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .Brand-name {
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+.Parent {
+  scroll-behavior: smooth;
+}
+.Page-2 {
+  height: 100vh;
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Page-3 {
+  min-height: 100vh;
+  padding: 0px;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Button-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+.Voice-input {
+  border: solid 1px black;
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(66, 61, 61);
+}
+.Text-input {
+  border: solid 1px black;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(66, 61, 61);
+}
+.Text-input::placeholder {
+  color: #2c3e50;
+}
+.playlist-generator {
+  border-radius: 25px;
+  background-color: #0d0505;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.playlist-generator:hover {
+  background-color: #2c3e50;
+}
+.question {
+  font-family: "Poppins";
+  color: #2c3e50;
+}
+.Grid {
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 10px;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: inset black;
+  transition: transform ease-in-out 0.3s;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  transition: transform 0.3s ease-out;
+}
+.Grid:hover {
+  transform: scale(1.05);
+}
+.Grid:active {
+  background-color: #3b5269;
+}
+.Grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+  width: 800px;
+  text-align: center;
+  color: aliceblue;
+}
+@media (max-width: 992px) {
+  .Grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .question {
+    width: fit-content;
+  }
+}
+@media (max-width: 480px) {
+  .Grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.description-1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(81, 81, 81);
+}
+.Party-icon {
+  height: 13px;
+  width: 13px;
+}
+.Heart-icon {
+  height: 13px;
+  width: 13px;
+}
+.Brain-icon {
+  height: 13px;
+  width: 13px;
+}
+.Energy-icon {
+  height: 13px;
+  width: 13px;
+}
+.sad-icon {
+  height: 13px;
+  width: 13px;
+}
+.rock-icon {
+  height: 13px;
+  width: 13px;
+}

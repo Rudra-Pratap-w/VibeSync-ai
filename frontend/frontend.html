@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      font-family: "Poppins", sans-serif;
+      color: #fafafa;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1#mood-title {
+      font-family: "Orbitron", sans-serif;
+      font-size: 3rem;
+      margin: 20px 0;
+      background: linear-gradient(45deg, #00ffff, #ff00ff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .playlist-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      width: 90%;
+      max-width: 1200px;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    .playlist {
+      background: rgba(10, 7, 7, 0.08);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      cursor: pointer;
+    }
+
+    .playlist:hover {
+      transform: scale(1.03);
+
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    }
+
+    .playlist:nth-child(1) {
+      grid-column: span 3;
+    }
+
+    .playlist:nth-child(2) {
+      grid-column: span 2;
+    }
+
+    .playlist:nth-child(3) {
+      grid-column: span 1;
+    }
+
+    .playlist:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .playlist:nth-child(5) {
+      grid-column: span 4;
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+      box-shadow: 0 0 10px rgba(75, 177, 245, 0.3);
+      margin-bottom: 10px;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <body>
+    <h1 id="mood-title">Loading...</h1>
+    <div id="playlist-container" class="playlist-container"></div>
+    <script src="frontend.js" defer></script>
+  </body>
+</html>
